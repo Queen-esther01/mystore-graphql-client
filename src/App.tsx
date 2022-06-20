@@ -7,7 +7,7 @@ import { Toaster } from 'react-hot-toast';
 import Cart from './pages/Cart';
 
 const client = new ApolloClient({
-	uri: 'http://localhost:4000/',
+	uri: 'https://mystore-graphql-production.herokuapp.com/',
 	cache: new InMemoryCache(),
 })
 
