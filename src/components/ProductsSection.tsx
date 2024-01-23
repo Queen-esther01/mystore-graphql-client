@@ -59,7 +59,7 @@ function ProductsSection() {
     
 
     const [getProductsByCategory, { loading: loadingByCategory, error: errorByCategory, data: dataByCategory }] = useLazyQuery<ByCategory>(GET_PRODUCTS_BY_CATEGORY)
-    console.log(dataByCategory)
+
     useEffect(() => {
         if(dataByCategory) setProducts(dataByCategory.productsByCategory)
     }, [dataByCategory])
